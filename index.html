@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Priyanshu | Future IAS</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:70px 20px;
+    background: linear-gradient(270deg,#00c6ff,#0072ff,#00c6ff);
+    background-size:600% 600%;
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+header h1{
+    font-size:45px;
+    margin:15px 0 5px;
+    text-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+header p{
+    font-size:20px;
+    opacity:0.95;
+}
+
+/* ===== PHOTO ===== */
+.photo-box{
+    width:190px;
+    height:190px;
+    margin:auto;
+    border-radius:50%;
+    position:relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.photo-box::before{
+    content:"";
+    position:absolute;
+    inset:-6px;
+    border-radius:50%;
+    background:linear-gradient(45deg,#00f2fe,#4facfe,#00f2fe);
+    z-index:-1;
+    filter:blur(6px);
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #000;
+    background:#111;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-15px)}
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* ===== CARDS ===== */
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius:20px;
+    padding:30px;
+    margin:30px 0;
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    transform:translateY(40px);
+    opacity:0;
+    animation: reveal 1s forwards;
+}
+
+.card:nth-child(1){animation-delay:0.2s}
+.card:nth-child(2){animation-delay:0.4s}
+.card:nth-child(3){animation-delay:0.6s}
+.card:nth-child(4){animation-delay:0.8s}
+
+@keyframes reveal{
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+.card:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 35px rgba(0,255,255,0.6);
+}
+
+.card h2{
+    color:#00eaff;
+    margin-bottom:15px;
+    text-shadow:0 0 10px rgba(0,234,255,0.6);
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin:8px 0;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#aaa;
+    letter-spacing:1px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="photo-box">
+        <img src="file:///C:/Users/IS/Downloads/Gemini_Generated_Image_6w4i5m6w4i5m6w4i%20(1).png" alt="Priyanshu">
+    </div>
+    <h1>Priyanshu</h1>
+    <p>Grade 6 • Section E • MJRP Public School • Future IAS Officer</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👦 About Me</h2>
+        <p>
+            Hello! My name is <strong>Priyanshu</strong>.  
+            I am a student of <strong>Grade 6 (Section E)</strong> at  
+            <strong>MJRP Public School</strong>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🏫 School Details</h2>
+        <ul>
+            <li><b>School:</b> MJRP Public School</li>
+            <li><b>Class:</b> 6th</li>
+            <li><b>Section:</b> E</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🎨 Hobbies</h2>
+        <ul>
+            <li>Crafting</li>
+            <li>Creative Art</li>
+            <li>Handmade Projects</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Dream</h2>
+        <p>
+            My dream is to become an <strong>IAS Officer</strong>  
+            and serve my country with honesty and dedication.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 | Priyanshu Student Portfolio
+</footer>
+
+</body>
+</html>
